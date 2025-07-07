@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://Justcnds.github.io/sitemap.xml
+
+# Disallow certain directories (if any)
+# Disallow: /private/
+# Disallow: /temp/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl delay (optional)
+Crawl-delay: 1

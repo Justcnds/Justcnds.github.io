@@ -1,0 +1,423 @@
+/* Responsive Design Styles */
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 7rem;
+    }
+    
+    .work-grid {
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .work-item:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .work-item:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+}
+
+/* Desktop (1024px to 1439px) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1.5fr 1fr;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1.2fr 1fr;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet (768px to 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .nav-menu {
+        gap: var(--space-md);
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    
+    .hero-section {
+        grid-template-columns: 1fr;
+        padding: var(--space-lg);
+        text-align: center;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .hero-visual {
+        height: 250px;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    
+    .title-line-2 {
+        margin-left: 0;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+        text-align: center;
+    }
+    
+    .about-text .section-title {
+        text-align: center;
+    }
+    
+    .work-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .work-item-large {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+    
+    .work-item:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .work-item:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--space-md);
+    }
+    
+    .skill-cards {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Large (481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
+    .nav-experimental {
+        padding: var(--space-sm) 0;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: var(--space-lg);
+        transform: translateY(-100%);
+        transition: var(--transition-normal);
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .main-content {
+        margin-top: 70px;
+    }
+    
+    .hero-section {
+        min-height: 80vh;
+        padding: var(--space-md);
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-visual {
+        height: 200px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .shape {
+        display: none;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .work-item-large {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .work-image {
+        height: 150px;
+    }
+    
+    .work-item-large .work-image {
+        height: 200px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .skill-card {
+        position: static !important;
+        transform: none !important;
+        margin-bottom: var(--space-sm);
+        text-align: center;
+    }
+    
+    .skill-cards {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .about-visual {
+        height: auto;
+    }
+}
+
+/* Mobile Small (320px to 480px) */
+@media (max-width: 480px) {
+    :root {
+        --space-xs: 0.25rem;
+        --space-sm: 0.5rem;
+        --space-md: 1rem;
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+        --space-2xl: 2.5rem;
+        --space-3xl: 3rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
+    .hero-section {
+        min-height: 70vh;
+        padding: var(--space-sm);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-visual {
+        height: 150px;
+        max-width: 200px;
+    }
+    
+    .visual-element {
+        display: none;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: var(--space-lg);
+    }
+    
+    .about-description {
+        font-size: 1rem;
+    }
+    
+    .work-image,
+    .work-item-large .work-image {
+        height: 120px;
+    }
+    
+    .work-content {
+        position: static;
+        transform: none;
+        background: white;
+        color: var(--text-primary);
+    }
+    
+    .work-title {
+        color: var(--text-primary);
+    }
+    
+    .work-description {
+        color: var(--text-secondary);
+    }
+    
+    .product-image {
+        height: 150px;
+    }
+    
+    .cta-button {
+        padding: var(--space-sm) var(--space-md);
+        font-size: 0.9rem;
+    }
+    
+    .footer {
+        padding: var(--space-xl) 0 var(--space-md);
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: var(--space-sm);
+        text-align: center;
+    }
+    
+    .loading-text {
+        font-size: 1.5rem;
+    }
+    
+    .loading-progress {
+        width: 150px;
+    }
+}
+
+/* Ultra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .nav-brand .brand-link {
+        font-size: 1.2rem;
+    }
+    
+    .cta-button {
+        padding: var(--space-xs) var(--space-sm);
+        font-size: 0.8rem;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-background,
+    .work-image,
+    .product-image {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .floating-shapes,
+    .visual-element,
+    .scroll-arrow {
+        animation: none !important;
+    }
+    
+    .hero-title .title-line {
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    .hero-subtitle {
+        opacity: 1 !important;
+        animation: none !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nav-experimental,
+    .loading-screen,
+    .floating-shapes,
+    .visual-element,
+    .scroll-indicator {
+        display: none !important;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        page-break-after: always;
+    }
+    
+    .work-item,
+    .product-card {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: var(--text-primary) !important;
+        text-decoration: underline !important;
+    }
+    
+    .cta-button {
+        background: none !important;
+        color: var(--text-primary) !important;
+        border: 2px solid var(--text-primary) !important;
+    }
+}

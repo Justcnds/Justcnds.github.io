@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minecraft专业商店 - 购买高质量插件、建筑作品和跑酷地图">
+    <meta name="keywords" content="Minecraft插件,我的世界建筑,跑酷地图,服务器插件,建筑设计">
+    <title>Minecraft商店 | Justcnds</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/experimental.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-experimental" id="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">CN</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="about.html" class="nav-link">关于</a>
+                <a href="portfolio.html" class="nav-link">作品</a>
+                <a href="shop.html" class="nav-link active">商店</a>
+                <a href="contact.html" class="nav-link">联系</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <span class="cart-count" id="cart-count">0</span>
+                🛒
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Shop Header -->
+        <section class="shop-header">
+            <div class="container">
+                <div class="header-content" data-animation="fadeInUp">
+                    <h1 class="page-title">Minecraft商店</h1>
+                    <p class="page-subtitle">专业的插件开发与建筑设计服务</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Filter -->
+        <section class="shop-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="filter-tabs" data-animation="fadeInUp">
+                        <button class="filter-btn active" data-filter="all">全部产品</button>
+                        <button class="filter-btn" data-filter="plugins">插件</button>
+                        <button class="filter-btn" data-filter="buildings">建筑</button>
+                        <button class="filter-btn" data-filter="parkour">跑酷地图</button>
+                        <button class="filter-btn" data-filter="services">定制服务</button>
+                    </div>
+                    <div class="sort-controls">
+                        <select id="sort-select" class="sort-select">
+                            <option value="default">默认排序</option>
+                            <option value="price-low">价格从低到高</option>
+                            <option value="price-high">价格从高到低</option>
+                            <option value="newest">最新发布</option>
+                            <option value="popular">最受欢迎</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid" id="products-grid">
+                    <!-- Product Items -->
+                    <div class="product-card" data-category="plugins" data-price="199" data-animation="fadeInUp">
+                        <div class="product-image">
+                            <img src="assets/images/products/parkour-timer.jpg" alt="跑酷计时插件" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="parkour-timer">快速预览</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">跑酷计时插件</h3>
+                            <p class="product-description">专业的跑酷计时系统，支持排行榜和记录保存</p>
+                            <div class="product-price">
+                                <span class="current-price">¥199</span>
+                                <span class="original-price">¥299</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(47)</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="parkour-timer">加入购物车</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="buildings" data-price="89" data-animation="fadeInUp">
+                        <div class="product-image">
+                            <img src="assets/images/products/modern-buildings.jpg" alt="现代建筑包" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="modern-buildings">快速预览</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">现代建筑包</h3>
+                            <p class="product-description">10个精美现代建筑，包含Schematic文件</p>
+                            <div class="product-price">
+                                <span class="current-price">¥89</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(32)</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="modern-buildings">加入购物车</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="parkour" data-price="129" data-animation="fadeInUp">
+                        <div class="product-image">
+                            <img src="assets/images/products/parkour-maps.jpg" alt="竞技跑酷地图包" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="parkour-maps">快速预览</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">竞技跑酷地图包</h3>
+                            <p class="product-description">5个专业跑酷地图，多种难度等级</p>
+                            <div class="product-price">
+                                <span class="current-price">¥129</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(28)</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="parkour-maps">加入购物车</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="graphics" data-price="199" data-animation="fadeInUp">
+                        <div class="product-image">
+                            <img src="assets/images/products/graphics-1.jpg" alt="插画素材包" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="graphics-1">快速预览</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">插画素材包</h3>
+                            <p class="product-description">50个高质量矢量插画</p>
+                            <div class="product-price">
+                                <span class="current-price">¥199</span>
+                                <span class="original-price">¥299</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(15)</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="graphics-1">加入购物车</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="templates" data-price="129" data-animation="fadeInUp">
+                        <div class="product-image">
+                            <img src="assets/images/products/template-2.jpg" alt="移动应用UI套件" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="template-2">快速预览</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">移动应用UI套件</h3>
+                            <p class="product-description">完整的移动应用界面设计</p>
+                            <div class="product-price">
+                                <span class="current-price">¥129</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(21)</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="template-2">加入购物车</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="fonts" data-price="89" data-animation="fadeInUp">
+                        <div class="product-image">
+                            <img src="assets/images/products/font-2.jpg" alt="手写字体" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn" data-product="font-2">快速预览</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">手写风格字体</h3>
+                            <p class="product-description">3款手写风格英文字体</p>
+                            <div class="product-price">
+                                <span class="current-price">¥89</span>
+                                <span class="original-price">¥119</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(27)</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-product-id="font-2">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>购物车</h3>
+            <button class="cart-close" id="cart-close">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>总计: ¥<span id="cart-total">0</span></strong>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">结账</button>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="quick-view-modal" id="quick-view-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-price">
+                        <span class="current-price" id="modal-price"></span>
+                        <span class="original-price" id="modal-original-price"></span>
+                    </div>
+                    <div class="modal-features" id="modal-features">
+                        <!-- Features will be added dynamically -->
+                    </div>
+                    <div class="modal-actions">
+                        <button class="add-to-cart-btn large" id="modal-add-to-cart">加入购物车</button>
+                        <button class="buy-now-btn" id="modal-buy-now">立即购买</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>创新设计师</h3>
+                    <p>探索设计的无限可能</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:your.email@example.com">邮箱</a>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

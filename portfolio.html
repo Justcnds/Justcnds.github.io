@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="创新设计师作品集 - 展示最新的设计项目和创意作品">
+    <meta name="keywords" content="作品集,设计项目,UI设计,品牌设计,网页设计">
+    <title>作品集 | 创新设计师</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/experimental.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-experimental" id="main-nav">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">YN</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="about.html" class="nav-link">关于</a>
+                <a href="portfolio.html" class="nav-link active">作品</a>
+                <a href="shop.html" class="nav-link">商店</a>
+                <a href="contact.html" class="nav-link">联系</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Portfolio Header -->
+        <section class="portfolio-header">
+            <div class="container">
+                <div class="header-content" data-animation="fadeInUp">
+                    <h1 class="page-title">我的作品集</h1>
+                    <p class="page-subtitle">探索创新设计的无限可能</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-tabs" data-animation="fadeInUp" data-stagger="true">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="web">网页设计</button>
+                    <button class="filter-btn" data-filter="brand">品牌设计</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX</button>
+                    <button class="filter-btn" data-filter="mobile">移动应用</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid-section">
+            <div class="container">
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Web Design Projects -->
+                    <article class="portfolio-item" data-category="web" data-animation="fadeInUp">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/web-1.jpg" alt="实验性网页设计" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="action-btn" data-action="view" data-project="web-1">
+                                        <span>查看</span>
+                                    </button>
+                                    <button class="action-btn" data-action="details" data-project="web-1">
+                                        <span>详情</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">实验性网页设计</h3>
+                            <p class="portfolio-description">突破传统的网页布局设计，采用创新的视觉语言</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="brand" data-animation="fadeInUp">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/brand-1.jpg" alt="品牌视觉系统" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="action-btn" data-action="view" data-project="brand-1">
+                                        <span>查看</span>
+                                    </button>
+                                    <button class="action-btn" data-action="details" data-project="brand-1">
+                                        <span>详情</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">品牌视觉系统</h3>
+                            <p class="portfolio-description">完整的品牌识别设计，从logo到应用系统</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">品牌设计</span>
+                                <span class="tag">视觉识别</span>
+                                <span class="tag">Logo设计</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="ui" data-animation="fadeInUp">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/ui-1.jpg" alt="用户界面设计" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="action-btn" data-action="view" data-project="ui-1">
+                                        <span>查看</span>
+                                    </button>
+                                    <button class="action-btn" data-action="details" data-project="ui-1">
+                                        <span>详情</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">用户界面设计</h3>
+                            <p class="portfolio-description">注重用户体验的界面设计，简洁而富有表现力</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">UI设计</span>
+                                <span class="tag">UX设计</span>
+                                <span class="tag">原型设计</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="mobile" data-animation="fadeInUp">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/mobile-1.jpg" alt="移动应用界面" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="action-btn" data-action="view" data-project="mobile-1">
+                                        <span>查看</span>
+                                    </button>
+                                    <button class="action-btn" data-action="details" data-project="mobile-1">
+                                        <span>详情</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">移动应用界面</h3>
+                            <p class="portfolio-description">创新的移动端用户体验设计</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">移动设计</span>
+                                <span class="tag">iOS</span>
+                                <span class="tag">Android</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="web" data-animation="fadeInUp">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/web-2.jpg" alt="响应式网站设计" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="action-btn" data-action="view" data-project="web-2">
+                                        <span>查看</span>
+                                    </button>
+                                    <button class="action-btn" data-action="details" data-project="web-2">
+                                        <span>详情</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">响应式网站设计</h3>
+                            <p class="portfolio-description">适配多设备的现代网站设计</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">响应式</span>
+                                <span class="tag">前端开发</span>
+                                <span class="tag">用户体验</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-category="brand" data-animation="fadeInUp">
+                        <div class="portfolio-image">
+                            <img src="assets/images/portfolio/brand-2.jpg" alt="包装设计" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="action-btn" data-action="view" data-project="brand-2">
+                                        <span>查看</span>
+                                    </button>
+                                    <button class="action-btn" data-action="details" data-project="brand-2">
+                                        <span>详情</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">产品包装设计</h3>
+                            <p class="portfolio-description">创意包装设计，提升品牌价值</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">包装设计</span>
+                                <span class="tag">平面设计</span>
+                                <span class="tag">品牌应用</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="cta-button" id="load-more-btn">加载更多作品</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal" id="portfolio-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-details">
+                        <div class="detail-item">
+                            <strong>项目类型：</strong>
+                            <span id="modal-category"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>完成时间：</strong>
+                            <span id="modal-date"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>使用技术：</strong>
+                            <div id="modal-tags"></div>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="#" class="cta-button" id="modal-live-link" target="_blank">查看在线版本</a>
+                        <a href="#" class="cta-button secondary" id="modal-code-link" target="_blank">查看代码</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>创新设计师</h3>
+                    <p>探索设计的无限可能</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:your.email@example.com">邮箱</a>
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
